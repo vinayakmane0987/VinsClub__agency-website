@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+.navbar__element {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar__element-logo {
+  margin-right: 2rem;
+}
+
+.navbar__element-keys {
+  display: flex;
+  flex-direction: row;
+}
+.navbar__element-keys p {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+.navbar__element-keys p:hover {
+  background-color: #ffff;
+  border: none;
+  border-radius: 4px;
+}
+
+.navbar__element-signin {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 2rem;
+}
+.navbar__element-signin button {
+  line-height: 2rem;
+  padding: 0 1rem;
+  border-radius: 4px;
+  border: none;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.navbar__element-signin button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.navbar__menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.navbar__menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: lightgray;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+.navbar__menu_container p{
+    margin: 0.5rem 1rem;
+    color: rgb(43, 40, 40);
+}
+.navbar__menu_container-sign{
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar__element-keys {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+    .navbar__element-logo h5{
+      font-size: 2rem;
+    }
+    .navbar__element-signin button{
+      font-size: 1.5rem;
+    }
+    .navbar__menu_container-element a{
+      font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+    .navbar__element-logo h5{
+      font-size: 1.2rem;
+    }
+    .navbar__element-signin button{
+      font-size: 1rem;
+    }
+    .navbar__menu_container-element a{
+      font-size: 1.4rem;
+    }
+}

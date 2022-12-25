@@ -1,0 +1,97 @@
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.header__content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin-right: 5rem;
+}
+.header__content-heading{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.header__content-heading h1{
+    font-size: 5rem;
+   color: rgb(27, 26, 26);
+}
+.header__content-para {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.header__content-para p{
+    font-size: 0.85rem;
+    color: rgb(80, 77, 77);
+    font-weight: 500;
+    font-family: serif;
+}
+
+.header__content-footer{
+    width: 100%;
+    color: rgb(27, 26, 26);
+}
+
+.header__content-img{
+    display: flex;
+    flex: 1;
+}
+.header__content-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4rem;
+    border: none;
+    box-shadow: rgba(0 0 0 / 69%) 0px 26px 30px -10px, rgba(0 0 0 / 73%) 0px 16px 10px -10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .header__content-img {
+        margin-top: 2rem;
+        padding: 1rem;
+        border-top: 1px solid darkgrey;
+    }
+    .header__content-heading h1 {
+        font-size: 4rem;
+    }
+    .header__content-para p{
+        width: 70%;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+    }   
+    .header__content h3{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .header__content-img {
+        height: 300px;
+        width: 300px;
+        padding: 1rem;
+        border-top: 1px solid darkgrey;
+    }
+    .header__content-heading h1 {
+        font-size: 2rem;
+    }
+    .header__content-para p{
+        width: 80%;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+    }
+}
+@media screen and (max-width: 490px) {
+    .header__content-img {
+        padding: 1rem;
+        border-top: 1px solid darkgrey;
+    }
+}
